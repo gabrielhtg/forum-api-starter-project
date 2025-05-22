@@ -3,7 +3,7 @@ name: Continuous Integration
 on:
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   test:
@@ -53,4 +53,3 @@ jobs:
           ACCESS_TOKEN_KEY: secret
           REFRESH_TOKEN_KEY: terces
           ACCESS_TOKEN_AGE: 3600
-          
