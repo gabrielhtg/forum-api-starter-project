@@ -206,7 +206,7 @@ describe('GetThreadDetailUseCase', () => {
     // Assert
     expect(threadDetail).toStrictEqual(new ThreadDetail({
       id: 'thread-123',
-      title: 'A thread wrong',
+      title: 'A thread',
       body: 'A long thread',
       date: '2023-09-22T00:00:00.000Z',
       username: 'foobar',
