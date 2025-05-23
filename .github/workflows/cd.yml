@@ -3,7 +3,7 @@ name: Continuous Deployment
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -11,15 +11,15 @@ jobs:
 
     steps:
       - name: SSH and deploy app
-        uses: appleboy/ssh-action@master
+        uses: gabrielhtg/forum-api-starter-project@main
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd ~/auth-api
-            git pull origin master
+            cd ~/
+            git pull origin main
             npm install
             npm run migrate up
-            pm2 restart auth-api
+            pm2 restart forum-api

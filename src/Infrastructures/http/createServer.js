@@ -64,7 +64,7 @@ const createServer = async (container) => {
     path: '/',
     handler: () => ({
       status: 'success',
-      message: 'Forum API Online',
+      message: 'Forum API Online Test',
     }),
   });
 
