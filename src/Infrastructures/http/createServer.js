@@ -64,7 +64,7 @@ const createServer = async (container) => {
     path: '/',
     handler: () => ({
       status: 'success',
-      message: 'Forum API Online Test',
+      message: 'Forum API Online Test Gabriel Cesar Hutagalung',
     }),
   });
 
